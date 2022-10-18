@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon</title>
+    <script defer src="./js/Codigo.js"></script>
+</head>
+<body>
+    <h1>MOKEPON! 🔥🌱💧</h1>
+    <script>
+
+    // IDEAAAAAAA: BARRA DE PROGRESO DE NIVEL
+    //IDEAAAAA: Cuando mueva el mouse sobre el nombre de algun mokepon que mueshe atributos
+
+    //Maquetacion = definir estructura de una pagina web y su contenido
+    //botones con <button>
+        // se le puede poner un atributo id para "referirse a ese boton"
+    // Dividir pagina por secciones con <section>
+    // Para hacer que ciertas partes sean dinamicas (osea que cambie <como las vidas>) entonces se les agrega <span>"palabra"
+    //<h2> es un subtitulo
+    //<h1> solo se puede utilizar una vez
+    // <input/> etiqueta que solo abre = Cuadro de texto y hay varios tipos de input
+        //+ type="tipo de input" = maqueta de como cambiar el tipo de input
+            //text = texto
+            //number = numeros
+            //time = tiempo
+            //date = calendario
+            //checkbox = cajita de chulito
+            //radio = circulito chuleable pero no se puede quitar :D
+                // para que solo se seleccione uno entre varios inputs = radio es encapsularlos en un nuevo atributo llamado name ="nombre del grupo al que pertenecen"
+    //<label> = se pone al mismo nivel que input y se pone para que los jugadores sepan que estan seleccionando de tal <input>
+        //Label tiene un atributo que es para vincularlo con un input = for="id del input" para que si se da click en el label tambien se haga en el input
+        
+        //        Hipodoge -> Agua💧
+        //    Capipepo -> Tierra🌱
+        //    Ratigueya -> Fuego🔥
+        //    Langostelvis -> Agua💧 y Fuego🔥
+        //    Tucapalma -> Agua💧 y Tierra🌱
+        //    Pydos -> Tierra🌱 y Fuego🔥
+
+    </script>
+    <section id = "Seleccionar-Mascota">
+        <h2>Elige a tu mascota:</h2>
+        
+        <input type="radio" name="mascota" id="Hipodoge" />
+        <label for="Hipodoge">Hipodoge</label> <br>
+
+        <input type="radio" name="mascota" id="Capipepo" />
+        <label for="Capipepo">Capipepo</label> <br>
+
+        <input type="radio" name="mascota" id="Ratigueya" />
+        <label for="Ratigueya">Ratigueya</label> <br>
+        <br>
+        <button id="boton-seleccion">Seleccionar</button>
+    </section>
+    
+    <section id = "Seleccionar-Ataque">
+        <h2>Elige tu ataque:</h2>
+
+        <p>Tu <span id = 'mascota-jugador'>mascota</span> tiene <span>3</span> vidas</p>
+        <p>La <span id = 'mascota-rival'></span> del rival tiene <span>3</span> vidas</p>
+        <p>
+            <button id="boton-fuego"> Fuego🔥</button>
+            <button id="boton-agua"> Agua💧</button>
+            <button id="boton-tierra"> Tierra🌱</button>
+        
+        
+        </p>
+    </section>
+
+    <section id = "Mensajes">
+        <p>Tu mascota ataco con Fuego🔥</p>
+    </section>
+
+    <section id = "Reiniciar">
+        <button id="boton-reiniciar"> Reiniciar</button>
+    </section>
+
+</body>
+</html>
