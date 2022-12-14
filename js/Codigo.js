@@ -20,6 +20,9 @@
 // cosa-- = restarle uno
 //variableConBoton.disabled = true = deshabilitar el boton que hace referencia la variable
 
+//Hay propiedades style que es: variable.style.(el estilo que se prefiera) <== sin parentesis
+    //.display = establece los tipos de visualizacion interna y externa de un elemento 
+
 //VARIABLES: NOTA//
     //Se le dice variables globales a las variables que se crean afuera de un bloque de codigo ya que estas se pueden utilizar en distintos lugares de nuestro codigo posteriormente
     // y no es una variable de entorno si se crea dentro de por ejemplo una funcion porque solo existira esa variable dentro de esa funcion
@@ -55,19 +58,27 @@ function aleatorio (min, max) {
 //BOTONES//
 
 function iniciarJuego(){
+    let sectionAtaque = input("Seleccionar-Ataque")
+    sectionAtaque.style.display = 'none'
+
+    let botonReiniciar = input("Reiniciar")
+    botonReiniciar.style.display = "none"
 
     let botonSeleccionMascota = document.getElementById('boton-seleccion')
     botonSeleccionMascota.addEventListener('click', seleccionarMascotaJugador)
 
     if (permitirMensajes == true){
-    let botonFuego = input('boton-fuego')
-    botonFuego.addEventListener('click', ataqueFuego)
+        let sectionAtaque = input("Seleccionar-Ataque")
+        sectionAtaque.style.display = 'block'
 
-    let botonAgua = input('boton-agua')
-    botonAgua.addEventListener('click', ataqueAgua)
+        let botonFuego = input('boton-fuego')
+        botonFuego.addEventListener('click', ataqueFuego)
 
-    let botonTierra = input('boton-tierra')
-    botonTierra.addEventListener('click', ataqueTierra)
+        let botonAgua = input('boton-agua')
+        botonAgua.addEventListener('click', ataqueAgua)
+
+        let botonTierra = input('boton-tierra')
+        botonTierra.addEventListener('click', ataqueTierra)
     }
 }
 
@@ -123,9 +134,10 @@ function ataqueTierra(){
 //SELECCION ATAQUE RIVAL//
 
 function ataqueRival(){
+    let sectionMascotas = input("Seleccionar-Mascota")
+    sectionMascotas.style.display = "none"
+    
     let ataqueAleatorio = aleatorio(1,3)
-    let permitirSeleccion = input("boton-seleccion")
-    permitirSeleccion.disabled = true
 
     if(ataqueAleatorio == 1){
         ataqueEnemigo = "Fuego🔥"
@@ -172,7 +184,7 @@ function crearMensaje() {
         disabled("boton-fuego")
         disabled("boton-tierra")
         disabled("boton-agua")
-        crearBotonReiniciar()
+        botonReiniciar()
     }
 }
 
@@ -192,12 +204,10 @@ function crearResultado(){
 
 //REINICIAR//
 
-function crearBotonReiniciar(){
-    p = input('Reiniciar')
-    l = document.createElement("button")
-    l.innerHTML = "Reiniciar"
-    p.appendChild(l)
-    l.addEventListener("click", reiniciarJuego)
+function botonReiniciar(){
+    let boton = input("Reiniciar")
+    boton.style.display = 'block'
+    boton.addEventListener('click', reiniciarJuego)
 }
 function reiniciarJuego(){
     location.reload()
