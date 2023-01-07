@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&display=swap");
+
+body {
+  background-color: #001253;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+#Seleccionar-Mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title {
+  font-size: 80px;
+  color: darkorange;
+  height: 70px;
+  margin: 32px;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: unset;
+}
+
+.Subtitle {
+  display: flex;
+  margin: unset;
+  justify-content: center;
+  font-family: "Alfa Slab One", cursive;
+  color: azure;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: unset;
+}
+
+#options {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 44px;
+  display: flex;
+  gap: 125px;
+  margin-bottom: 23px;
+}
+
+.cards {
+  display: flex;
+  height: 215px;
+  width: 165px;
+  color: white;
+  font-size: 24px;
+  border: 9px solid silver;
+  border-radius: 12px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards p {
+  display: flex;
+  margin: unset;
+  align-self: center;
+  padding: 8px;
+}
+
+.cards img {
+  height: 144px;
+  width: auto;
+}
+
+#card-hipodoge {
+  background-color: #3e459c;
+}
+
+#card-capipepo {
+  background-color: #409c3e;
+}
+
+#card-ratigueya {
+  background-color: #a73b3b;
+}
+
+input {
+  display: none;
+}
+
+#boton-seleccion {
+  margin-top: 24px;
+  background-color: #ffa400;
+  width: 150px;
+  height: 51px;
+  color: rgb(3 15 58);
+  border: 1px solid #fd841f;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#Seleccionar-Ataque {
+  flex-direction: column;
+  align-items: center;
+}
+
+#ataques {
+  display: flex;
+  gap: 76px;
+  margin: 28px;
+}
+
+.boton-de-ataque {
+  margin-top: 12px;
+  font-size: 40px;
+  border-radius: 10px;
+  width: 160px;
+  height: 74px;
+}
+
+#boton-fuego {
+  background-color: #ffa400;
+  border: 6px solid #c96e00;
+}
+
+#boton-agua {
+  background-color: #3434fd;
+  border: 6px solid darkblue;
+}
+
+#boton-tierra {
+  background-color: #1ebf00;
+  border: 6px solid darkgreen;
+}
+
+#Mensajes {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  width: 265px;
+  height: 59px;
+  color: rgba(255, 255, 255, 0.952);
+  border-radius: 8px;
+}
+
+#Reiniciar {
+  font-family: "Open Sans", sans-serif;
+  justify-content: center;
+  font-size: 19px;
+  color: rgb(3 15 58);
+  width: 265px;
+  background-color: #ffa400;
+  border-radius: 15px;
+  border: 2px solid #fd841f;
+  margin: 10px;
+}
+
+.CardsVS {
+  display: grid;
+  color: white;
+  grid-template-columns: 247px 125px 489px 80px 257px;
+  padding: 28px;
+  font-family: "Open Sans", sans-serif;
+  justify-items: center;
+  align-items: center;
+}
+
+.cardJ {
+  display: grid;
+  padding-left: 24px;
+  justify-items: center;
+  border: 9px solid silver;
+  border-radius: 20px;
+  width: 225px;
+  height: 338px;
+}
+
+#mascota-jugador {
+  justify-self: center;
+  display: grid;
+  font-size: 26px;
+}
+
+.imageJ {
+  display: grid;
+  height: 153px;
+  width: auto;
+}
+
+#vida-jugador {
+  display: grid;
+  font-size: 32px;
+  justify-self: center;
+  align-self: center;
+  margin-top: unset;
+}
+
+.rightPart {
+  display: grid;
+  width: 184px;
+  height: 338px;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(167, 59, 59);
+  border: 9px solid silver;
+  border-left: unset;
+}
+
+#ataque-jugador {
+  display: grid;
+  width: 81px;
+  align-items: center;
+  justify-items: center;
+  padding: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: white;
+  margin: unset;
+  border: 3px solid silver;
+  border-radius: 20px;
+  color: #080808;
+  font-size: 14px;
+}
+
+#vs {
+  display: grid;
+  align-items: center;
+}
+
+.cardR {
+  display: grid;
+  justify-items: center;
+  border: 9px solid silver;
+  border-radius: 20px;
+  width: 222px;
+  height: 338px;
+}
+
+#mascota-rival {
+  font-size: 24px;
+}
+
+.imageR {
+  display: grid;
+  height: 144px;
+  width: auto;
+}
+
+#vida-rival {
+  font-size: 24px;
+}

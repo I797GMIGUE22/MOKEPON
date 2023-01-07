@@ -1,0 +1,61 @@
+Vinculos entre html y css = selectores
+Inspeccionar la pagina sirve de mucho con css
+Cada elemento en un html tiene sus valores predeterminados como su margin, width, height, etc..
+
+Tipos de selectores:
+    -Type = en html = ej:<h1> en css etiqueta{}
+    LOS NOMBRES DE LAS CLASES Y IDS DEBEN SER UNICOS:
+    -Class = en html = etiqueta + class="nombredelaclase" en css = .nombreDeLaClase{}
+    -Id = en html = etiqueta + id="nombreDelId" en css = #nombreDelId{}
+
+con las llaves podremos crearle styles al selector:
+selector{
+    propiedades + valor
+
+    propiedades = caracteristicas que le podemos poner a ese selector (SE ESCRIBEN EN INGLES)
+    buscar propiedades en = cssreference.io
+        - in collections = se ven pueden buscar por categorias
+
+    valor = se determina dependiendo del valor ej: propiedad = color
+                                                    valor = rojo
+}
+
+pagina de colores css: htmlcolorcodes.com
+
+el ancho y largo = se modifican por pixeles ej: 100px
+
+TIPOS DE DISPLAY:
+    -block: Ocupa toda la pantalla de izquierda a derecha
+    -inline: Ocupa solo un pedazo de la pantalla y no lo afecta height and width
+    -inline block: Ocupa solo un pedazo de la pantalla pero si lo afecta height and width
+
+FLEXBOX : Organizar por contenedores que tienen elementos 
+    - contenedores son etiquetas con elementos en su interior (padres) y elementos (hijos)
+    - elementos que tengan contenido en su interior como unn contenedor podran hacer lo de ambos (contenedores y elementos)
+    - guia en css-tricks.com
+    - flex por defecto tendra un flex-direction (esto hara que algunas propiedades funcionen)
+    - vh = el alto mas visible
+    - vw = ancho mas visible
+    - flexboxfroggy.com
+
+justify-content = Organizar de forma vertical (deben tener un espacio por donde moverse) 
+allign-items = Organizar de forma horizontal (deben tener espacio por donde moverse)
+
+El tamaño se trabaja por multiplos de 4
+
+Si se quieren tener distintas medidas para por ejemplo el margin se pone:
+    margin: 3px     20px     15px   10px;
+            arriba  derecha  abajo  izquierda
+        o
+    margin-top: arriba
+    margin-bottom: abajo
+    margin-left: izquierda
+    margin-right: derecha
+
+Ordenar todo por cajitas
+Primero papel y luego css
+
+display: block > display: flex; es mas poderoso
+
+css grid = Organizar por rejillas
+    grid-template-columns = separar por columnas

@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Mokepon</title>
     <script defer src="./js/Codigo.js"></script>
+    <link rel="stylesheet" href="./Style.css" />
 </head>
+
 <body>
-    <h1>MOKEPON! 🔥💧🌱</h1>
-    <script>
+    <section id="Seleccionar-Mascota">
+        <h1 class="Title">MOKEPON!</h1>
 
-    // IDEAAAAAAA: BARRA DE PROGRESO DE NIVEL
-    //IDEAAAAA: Cuando mueva el mouse sobre el nombre de algun mokepon que mueshe atributos
+        <h2 class="Subtitle">Elige a tu mascota:</h2>
 
-    //Maquetacion = definir estructura de una pagina web y su contenido
-    //botones con <button>
-        // se le puede poner un atributo id para "referirse a ese boton"
-    // Dividir pagina por secciones con <section>
-    // Para hacer que ciertas partes sean dinamicas (osea que cambie <como las vidas>) entonces se les agrega <span>"palabra"
-    //<h2> es un subtitulo
-    //<h1> solo se puede utilizar una vez
-    // <input/> etiqueta que solo abre = Cuadro de texto y hay varios tipos de input
-        //+ type="tipo de input" = maqueta de como cambiar el tipo de input
-            //text = texto
-            //number = numeros
-            //time = tiempo
-            //date = calendario
-            //checkbox = cajita de chulito
-            //radio = circulito chuleable pero no se puede quitar :D
-                // para que solo se seleccione uno entre varios inputs = radio es encapsularlos en un nuevo atributo llamado name ="nombre del grupo al que pertenecen"
-    //<label> = se pone al mismo nivel que input y se pone para que los jugadores sepan que estan seleccionando de tal <input>
-        //Label tiene un atributo que es para vincularlo con un input = for="id del input" para que si se da click en el label tambien se haga en el input
-        
-        //        Hipodoge -> Agua💧
-        //    Capipepo -> Tierra🌱
-        //    Ratigueya -> Fuego🔥
-        //    Langostelvis -> Agua💧 y Fuego🔥
-        //    Tucapalma -> Agua💧 y Tierra🌱
-        //    Pydos -> Tierra🌱 y Fuego🔥
+        <div id="options">
+            <label id="card-hipodoge" class="cards" for="Hipodoge">
+                <p>Hipodoge</p>
+                <img src="./Assets/hipodoge_attack.png" alt="Hipodoge" />
+                <input type="radio" name="mascota" id="Hipodoge" />
+            </label>
 
-    </script>
-    <section id = "Seleccionar-Mascota">
-        <h2>Elige a tu mascota:</h2>
-        
-        <input type="radio" name="mascota" id="Hipodoge" />
-        <label for="Hipodoge">Hipodoge🐸</label>
+            <label id="card-capipepo" class="cards" for="Capipepo">
+                <p>Capipepo</p>
+                <img src="./Assets/capipepo_attack.png" alt="Capipepo" />
+                <input type="radio" name="mascota" id="Capipepo" />
+            </label>
 
-        <input type="radio" name="mascota" id="Capipepo" />
-        <label for="Capipepo">Capipepo🐔</label>
+            <label id="card-ratigueya" class="cards" for="Ratigueya">
+                <p>Ratigueya</p>
+                <img src="./Assets/ratigueya_attack.png" alt="Ratigueya" />
+                <input type="radio" name="mascota" id="Ratigueya" />
+            </label>
+        </div>
 
-        <input type="radio" name="mascota" id="Ratigueya" />
-        <label for="Ratigueya">Ratigueya🐀</label> <br>
-        <br>
         <button id="boton-seleccion">Seleccionar</button>
     </section>
-    
-    <section id = "Seleccionar-Ataque">
-        <h2>Elige tu ataque:</h2>
 
-        <p>Tu <span id = 'mascota-jugador'>mascota</span> tiene <span id = 'vida-jugador'>3</span> vidas</p>
-        <p>El <span id = 'mascota-rival'>mascota</span> del rival tiene <span id = 'vida-rival'>3</span> vidas</p>
-        <p>
-            <button id="boton-fuego"> Fuego🔥</button>
-            <button id="boton-agua"> Agua💧</button>
-            <button id="boton-tierra"> Tierra🌱</button>
-        
-        
-        </p>
+    <section id="Seleccionar-Ataque">
+        <h1 class="Title">MOKEPON!</h1>
+
+        <h2 class="Subtitle">Elige tu ataque:</h2>
+
+        <div id="ataques">
+            <button id="boton-fuego" class="boton-de-ataque">🔥</button>
+            <button id="boton-agua" class="boton-de-ataque">💧</button>
+            <button id="boton-tierra" class="boton-de-ataque">🌱</button>
+        </div>
+        <div id="Mensajes">
+            <p id="resultado">BUENA SUERTE</p>
+            <button id="Reiniciar">Reiniciar</button>
+        </div>
+        <div class="CardsVS">
+            <div class="cardJ">
+                <p id="mascota-jugador">mascota</p>
+                <div id="imageJ"></div>
+                <p id="vida-jugador"></p>
+            </div>
+            <div class="rightPart">
+                <p id="ataque-jugador"></p>
+            </div>
+            <p id="vs"> vs </p>
+            <div>
+                <p id="ataque-enemigo"></p>
+            </div>
+            <div class="cardR">
+                <p id="mascota-rival">mascota</p>
+                <div id="imageR"></div>
+                <p id="vida-rival"></p>
+            </div>
+        </div>
     </section>
-
-    <section id = "Mensajes">
-    </section>
-
-    <section id = "Reiniciar">
-        <p>
-            <button>Reiniciar</button>
-        </p>
-    </section>
-
 </body>
+
 </html>
